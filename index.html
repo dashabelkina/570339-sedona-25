@@ -2,11 +2,57 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Седона туристический город в штате Аризона</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
-
+    <header class="main-header">
+        <nav class="main-navigation">
+            <a class="main-header-logo">
+              <img src="img/index-logo.svg" width="140" height="72" alt="Логотип Седона">
+            </a>
+            <ul class="site-navigation">
+              <li><a href="info.html">Информация</a></li>
+              <li><a href="gallery.html">Фото и видео</a></li>
+              <li><a href="map.html">Карта штата</a></li>
+              <li><a href="hotels.html">Гостиницы</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <h1 class="visually-hidden">Гостиницы в Седоне</h1>
+        <section class="intro">
+            <p class="img-intro">
+                <img src="img/welcome.jpg" width="460" height="355" alt="Добро пожаловать">
+            </p>
+            <h2 class="intro-title">Седона — небольшой городок в Аризоне,<br>
+                заслуживающий большего!</h2>
+            <p class="intro-desc">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </section>
+    <!-- Здесь будет раздел "И у меня на это пять причин" -->
+        <section class="search">
+            <h2 class="search-title">Заинтересовались?</h2>
+            <p class="search-desc">Укажите предполагаемые даты поездки,<br> 
+            и мы покажем вам лучшие предложения гостиниц в седоне</p>
+            <a class="search-button" href="#">Поиск гостиницы в Седоне</a>
+        </section>
+        <!-- Здесь будет форма форма поиска гостиницы -->
+        <!-- Здесь будет карта -->
+    </main>
+    <footer class="main-footer">
+        <a class="visitsedona" href="#">#visitsedona</a>
+        <div class="footer-social">
+            <ul>
+                <li><a class="social-button" href="#">Twitter</a></li>
+                <li><a class="social-button" href="#">Facebook</a></li>
+                <li><a class="social-button" href="#">Youtube</a></li>
+            </ul>
+        </div>
+        <p class="footer-copyright">
+            <b>Website by</b> 
+            <a class="footer-buttom" href="https://htmlacademy.ru/intensive/htmlcss">
+                <img src="img/htmlacademy.jpg" width="118" height="42" alt="HTML Academy">
+            </a>
+        </p>
+    </footer>
   </body>
 </html>
