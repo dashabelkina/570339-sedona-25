@@ -22,7 +22,63 @@
         <h1 class="visually-hidden">Поиск гостиницы в Седоне</h1>
         <section class="form-filter">
             <h2 class="visually-hidden">Фильтр жилья</h2>
-                <!-- Здесь будет форма -->
+            <form class="form-filter-list" action="#" method="GET">
+                <fieldset class="form-filter-base">
+                    <legend>Инфраструктура:</legend>
+                     <ul>
+                        <li>
+                            <input type="checkbox" id="pool" name="pool" checked>
+                            <label for="pool">Бассейн</label>   
+                        </li>
+                        <li>
+                            <input type="checkbox" id="parking" name="parking">
+                            <label for="parking">Парковка</label>       
+                        </li>
+                        <li>
+                            <input type="checkbox" id="wifi" name="wifi">
+                            <label for="wifi">Wi-Fi</label>        
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset class="form-filter-hotel">
+                    <legend>Тип жилья:</legend>
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="hotel" name="hotel" checked>
+                            <label for="hotel">Гостиница</label>    
+                        </li>
+                        <li>
+                            <input type="checkbox" id="motel" name="motel" checked>
+                            <label for="motel">Мотель</label>    
+                        </li>
+                        <li>
+                            <input type="checkbox" id="suite" name="suite" checked>
+                            <label for="suite">Апартаменты</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset class="form-filter-price">
+                    <legend>Стоимость в сутки (Р):</legend>
+                    <ul>
+                        <li>
+                            <label for="min-price"></label>
+                            <input type="text" id="min-price" name="min-price" value="от 0">   
+                        </li>
+                        <li>
+                            <label for="max-price"></label>
+                            <input type="text" id="max-price" name="max-price" value="До 3000">   
+                        </li>
+                    </ul>
+                    <div class="range">
+                        <div class="scale" tabindex="0"></div>
+                        <div class="mark-min"></div>
+                        <div class="mark-max"></div>
+                    </div>
+                </fieldset>
+                <div class="submit">
+                    <input type="submit" id="submit" name="submit" value="Показать">
+                </div>
+            </form>
         </section>
         <section class="result-search">
             <h2 class="visually-hidden">Результат поиска</h2>
