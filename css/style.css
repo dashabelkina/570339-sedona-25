@@ -67,6 +67,7 @@ a {
 }
 
 .intro-title,
+.result-search-all,
 .hotels-title,
 .visitsedona
  {
@@ -80,6 +81,21 @@ a {
     line-height: 26px;
 }
 
+.features-item-title,
+.offer-item-title {
+    font-size: 21px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.offer ul {
+    list-style: none;
+}
+
+.features-item-blue {
+    color: #ffffff;
+    background-color: #81b3d2;
+}
 .search-title {
     font-size: 30px;
     line-height: 36px;
@@ -183,9 +199,72 @@ a {
     text-align: left;
 
     background-color: #fefefe;
-    box-shadow: none;
 }
- 
+
+.form-filter {
+    background-image: url("../img/filter_background.jpg")
+}
+
+.form-filter-list fieldset {
+    border: none;
+}
+
+.form-filter-list legend {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: left;
+}
+
+.form-filter-list ul {
+    list-style: none;
+    color: #ffffff;
+    text-align: left;
+}
+
+.submit input,
+.form-filter-price input {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+   
+    background: none;
+    border: solid #ffffff 2px;
+    border-radius: 1px;
+} 
+
+.submit input:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.sorting-list {
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+    text-align: left; 
+}
+
+.sorting-list a {
+    color: rgba(0, 0, 0, 0.30);
+    border-bottom: 1px dotted #81b3d2;
+}
+
+.sorting-list a:hover {
+    color: #81b3d2;
+    border-bottom: 1px dotted #81b3d2;
+}
+
+.sorting-list a:active {
+    color: #000000;
+    border-bottom: none;
+}
+
+.result-search ul,
+.sorting-button ul,
 .hotels ul {
     list-style: none;
 }
