@@ -53,17 +53,13 @@ a {
     box-shadow: 0 5px 15px 0px rgba(0, 1, 1, 0.20);   
 }
   
-.intro {
+.intro-img {
     background-color: #ffffff;
     background-image: url("../img/intro-background.jpg");
     background-position: top center;
     background-repeat: no-repeat;
     width: 1200px;
     height: 800px;
-}
-
-.img-intro {
-    text-align: center;
 }
 
 .intro-title,
