@@ -56,10 +56,10 @@ a {
 .intro-img {
     background-color: #ffffff;
     background-image: url("../img/intro-background.jpg");
-    background-position: top center;
+    background-position: center -57px;
     background-repeat: no-repeat;
     width: 1200px;
-    height: 800px;
+    height: 510px;
 }
 
 .intro-title,
@@ -112,6 +112,7 @@ a {
     color: #ffffff;
     vertical-align: middle;
     border: none;
+    text-transform: uppercase;
 }
 
 .search-button,
@@ -308,3 +309,189 @@ a {
 .footer-button:active {
     fill: #bdbbbc;
 }
+
+/* Сетки */
+
+/* body > * {background: rgba(255, 0, 0, 0.3)}
+body > * > * {background: rgba(156, 9, 107, 0.3)}
+body > * > * > * {background: rgba(255, 251, 0, 0.3)}
+body > * > * > * > *{background: rgba(0, 225, 255, 0.3)} */
+
+.body-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.main-header {
+    width: 1200px;
+    margin-bottom: 0px;
+}
+
+.main-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 56px;
+} 
+
+.main-header-logo {
+    width: 244px;
+    height: 72px;
+    margin-bottom: -16px; 
+} 
+
+.site-navigation {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.site-navigation li {
+    width: 240px;
+} /* Есть небольшое расхождение в отсупах в пунктах меню. По макету они расположены не равномерно, на лекции сказали, что такие отступы поправим потом*/
+
+.intro-img {
+    padding-top: 62px;
+    margin: 0;
+}
+
+.intro-text {
+    background-color: #ffffff;
+    /* background-image: url("../img/intro-mask.svg"); */
+    width: 1200px;
+    min-height: 215px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+} /* Блок уехал вниз из-за фона предыдущего блока, но расположение текстовой части совпадает с макетом*/
+.intro-title {
+    padding-top: 60px;
+    margin-bottom: 28px;   
+}
+
+.intro-title span,
+.search-desc span {
+    display: table;
+    margin: 0 auto;
+}
+
+.intro-desc {
+    margin-bottom: 55px;
+}
+
+.search {
+    min-height: 290px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.search-title {
+    margin-bottom: 27px;
+} /* Не могу попасть в макет. Почему-то этот блок не прилипает к верхнему краю контейнера и странно реагирует на отступы */
+
+.search-desc {
+    margin-bottom: 50px;
+}
+
+.search-button {
+    width: 568px;
+    height: 86px;
+    margin: 0;  
+}
+
+.search-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-hotel {
+    min-width: 568px;
+    min-height: 395px;
+}
+
+.button-search-hotel {
+    width: 458px;
+    height: 58px;
+    margin: 0;
+}
+
+.main-footer {
+    min-height: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+  
+.visitsedona {
+    margin: 0;
+} 
+
+.footer-social {
+    margin: 0;
+}
+
+.footer-copyright {
+    margin: 0;
+} /* Футер совпадает с макетом, кроме лого Академии, но пока без иконок соцсетей добавлять отсупы не стала */
+
+.hotels-list {
+    margin: 0;
+    padding: 0;
+    min-height: 455px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}/* Раздел получился больше из-за того, что не могу правильно расположить содержимое. Возможно пока не надо было покаэто делать*/
+
+.hotels-item {
+    min-height: 152px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 73px;
+    margin: 0;
+}
+
+.hotels-item-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-grow: 2;
+    padding-left: 30px;
+}
+
+.hotels-button-more {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    height: 27px;
+    margin-right: 7px;
+}
+
+.hotels-button-book {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 142px;
+    height: 27px;
+}
+
+.rating {
+    min-height: 152px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+    
+}
+
+
