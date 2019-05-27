@@ -498,4 +498,61 @@ body > * > * > * > *{background: rgba(0, 225, 255, 0.3)} */
     text-align: right;
 }
 
+.features-first {
+    display: flex;
+}
+
+.offer-list {
+    min-height: 330px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.offer-item {
+    width: 285px;
+}
+
+.features-second {
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.features-second .features-item-blue {
+    width: 405px;
+}
+
+.features-item-wrap {
+    display: flex;
+    justify-content: space-around;
+    min-height: 260px;
+}
+
+.map {
+    padding: 0;
+    margin: 0;
+}
+
+.form-filter {
+    padding: 0;
+    margin: 0;
+}
+
+.result-search {
+    padding: 0;
+    margin: 0;
+    min-height: 86px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 73px;
+}
+
+.sorting-list {
+    display: flex;
+}
 
