@@ -50,7 +50,6 @@ a {
 .container {
     background-color: #ffffff;
     width: 1200px;   
-    box-shadow: 0 5px 15px 0px rgba(0, 1, 1, 0.20);   
 }
   
 .intro-img {
@@ -320,10 +319,10 @@ body > * > * > * > *{background: rgba(0, 225, 255, 0.3)} */
 .body-wrapper {
     width: 1200px;
     margin: 0 auto;
+    box-shadow: 0 5px 15px 0px rgba(0, 1, 1, 0.20);
 }
 
 .main-header {
-    width: 1200px;
     margin-bottom: 0px;
 }
 
@@ -342,13 +341,22 @@ body > * > * > * > *{background: rgba(0, 225, 255, 0.3)} */
 
 .site-navigation {
     display: flex;
+    justify-content: space-around;
     margin: 0;
     padding: 0;
 }
 
+.site-navigation li:nth-child(-n+2) {
+    text-align: left;
+}
+
+.site-navigation li:nth-child(n+3) {
+    text-align: right;
+}
+  
 .site-navigation li {
     width: 240px;
-} /* Есть небольшое расхождение в отсупах в пунктах меню. По макету они расположены не равномерно, на лекции сказали, что такие отступы поправим потом*/
+} 
 
 .intro-img {
     padding-top: 62px;
@@ -364,16 +372,13 @@ body > * > * > * > *{background: rgba(0, 225, 255, 0.3)} */
     background-repeat: no-repeat;
     margin: 0;
     padding: 0;
-} /* Блок уехал вниз из-за фона предыдущего блока, но расположение текстовой части совпадает с макетом*/
-.intro-title {
-    padding-top: 60px;
-    margin-bottom: 28px;   
 }
 
-.intro-title span,
-.search-desc span {
-    display: table;
+.intro-title {
+    padding-top: 60px;
     margin: 0 auto;
+    margin-bottom: 28px; 
+    width: 445px; 
 }
 
 .intro-desc {
@@ -393,11 +398,11 @@ body > * > * > * > *{background: rgba(0, 225, 255, 0.3)} */
 
 .search-title {
     margin-bottom: 27px;
-} /* Не могу попасть в макет. Почему-то этот блок не прилипает к верхнему краю контейнера и странно реагирует на отступы */
+} 
 
 .search-desc {
     margin-bottom: 50px;
-}
+} /* Стили со span для переноса строки удалила, но здесь фокус с фиксированной шириной не сработает. Через white-space текст тоже встает не так, как надо. <br>? */
 
 .search-button {
     width: 568px;
@@ -439,7 +444,7 @@ body > * > * > * > *{background: rgba(0, 225, 255, 0.3)} */
 
 .footer-copyright {
     margin: 0;
-} /* Футер совпадает с макетом, кроме лого Академии, но пока без иконок соцсетей добавлять отсупы не стала */
+} 
 
 .hotels-list {
     margin: 0;
@@ -448,7 +453,7 @@ body > * > * > * > *{background: rgba(0, 225, 255, 0.3)} */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-}/* Раздел получился больше из-за того, что не могу правильно расположить содержимое. Возможно пока не надо было покаэто делать*/
+}
 
 .hotels-item {
     min-height: 152px;
@@ -491,7 +496,6 @@ body > * > * > * > *{background: rgba(0, 225, 255, 0.3)} */
     flex-direction: column;
     justify-content: space-between;
     text-align: right;
-    
 }
 
 
