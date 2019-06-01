@@ -61,28 +61,22 @@
                         </li>
                     </ul>
                 </fieldset>
-                <fieldset class="form-filter-price">
-                    <legend>Стоимость в сутки (Р):</legend>
-                    <ul>
-                        <li>
-                            <label for="min-price"></label>
-                            <input type="text" id="min-price" name="min-price" value="от 0">   
-                        </li>
-                        <li>
-                            <label for="max-price"></label>
-                            <input type="text" id="max-price" name="max-price" value="До 3000">   
-                        </li>
-                    </ul>
-                    <div class="range">
-                        <div class="scale" tabindex="0"></div>
-                        <div class="mark-min"></div>
-                        <div class="mark-max"></div>
-                    </div>
-                </fieldset>
-                <div class="submit">
-                    <input type="submit" id="submit" name="submit" value="Показать">
-                </div>
             </form>
+            <div class="filter-range">
+                <div class="filter-range-title">Стоимость в сутки (р):</div>
+                <div class="price-controls">
+                  <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                  <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+                </div>
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="range-toggle range-toggle-min"></div>
+                  <div class="range-toggle range-toggle-max"></div>
+                </div>
+                <button class="submit" type="submit">Показать</button>
+            </div>
         </section>
         <section class="result-search">
             <h2 class="visually-hidden">Результат поиска</h2>
