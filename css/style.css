@@ -821,48 +821,47 @@ input[type="text"]::placeholder {
     padding: 0;
 }
 
+.footer {
+    position: relative;
+    background-color: #ffffff;
+   	width: 1200px;
+    padding-left: px;
+} 
+
 .footer-wrap {
     display: flex;
-	position: relative;
     width: 1200px;
     min-height: 120px;
     justify-content: space-around;
     align-items: center;
-    margin: 0;
-    padding: 0;
+    
 }
 
-.main-footer,
-.inner-footer {
-    background-color: rgba( 254, 254, 254, 0.90);
-   	width: 1163px;
-    padding-left: 37px;
-    display: flex;
-    position: absolute;
-    bottom: auto;
-    margin-top: -123px;
-} 
-
-.inner-footer {
-   margin-top: 0;
-   background-color: #ffffff;
-   box-shadow: 0 10px 15px 0px rgba(0, 1, 1, 0.20);
+.footer-position {
+   background-color: rgba( 254, 254, 254, 0.90); 
+   position: absolute;
+   bottom: 3px;
+   left: 0px;
 }
 
 .footer-copyright {
-    display: flex;
-    padding-left: 30px; 
+    display: flex; 
 }
 
 .footer-copyright span {
     line-height: 26px;
     color: #000000; 
     margin-top: 12px;
-    margin-right: 10px;
+    margin-left: 30px;
 }
 
 .footer-button {
-  	margin-top: 5px; 
+  	margin-top: 5px;
+    padding-left: 8px;
+}
+
+.visitsedona {
+    margin-left: 30px;
 }
 
 .hotels-list {
@@ -968,7 +967,8 @@ input[type="text"]::placeholder {
     width: 160px;
     white-space: pre-wrap;
     line-height: 11px;
-    margin-bottom: 8px;
+    padding-top: 4px;
+    margin-bottom: 4px;
 }
 
 .features-item-number {
