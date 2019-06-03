@@ -270,7 +270,7 @@ input[type="radio"].visually-hidden {
 .form-filter-list {
 	display: flex;
 	padding-top: 27px;
-	padding-left: 60px;
+	padding-left: 59px;
 }
 
 .form-filter-base {
@@ -283,7 +283,7 @@ input[type="radio"].visually-hidden {
     font-size: 16px;
     font-weight: 700;
     color: #ffffff;
-    margin: 0 0 8px 0;
+    margin: 0 0 20px 0;
 }
 
 .check-list {
@@ -295,27 +295,71 @@ input[type="radio"].visually-hidden {
 }
 
 .checkbox-label {
-    position: relative;
     display: flex;
-    padding-left: 40px;
-    padding-bottom: 13px;
+    padding-left: 21px;
+    padding-bottom: 25px;
+    cursor: pointer;
 }
 
 .checkbox-input {
-    opacity: 0;
-    display: flex;
+    position: relative;
+    margin-right: 21px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
-.checkbox-label::before {
+.checkbox-input::before {
   content: "";
   position: absolute;
   display: block;
-  top: 0;
-  left: 0;
-  width: 23px;
+  top: -2px;
+  right: -7px;
+  width: 27px;
   height: 23px;
   background: url("../img/checkbox-off.svg") no-repeat top left;
   background-size: 23px 23px;
+}
+
+.checkbox-input:checked::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: -2px;
+  right: -7px;
+  width: 27px;
+  height: 23px;
+  background: url("../img/checkbox-on.svg") no-repeat top left;
+  background-size: 27px 23px;
+}
+
+.checkbox-input:disabled::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: -2px;
+  right: -7px;
+  width: 27px;
+  height: 23px;
+  background: url("../img/checkbox-off-disabled.svg") no-repeat top left;
+  background-size: 23px 23px;
+}
+
+.checkbox-input:checked:disabled::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: -2px;
+  right: -7px;
+  width: 27px;
+  height: 23px;
+  background: url("../img/checkbox-on-disabled.svg") no-repeat top left;
+  background-size: 27px 23px;
+}
+
+.check-list-item {
+    display: flex;
 }
 
 .form-filter-base {
@@ -424,7 +468,19 @@ input[type="radio"].visually-hidden {
 }
 
 .range-toggle:hover {
+     position: absolute;
+     top: -9px;
+  
+     width: 4px;
+     height: 4px;
+
      background: #1c4f80;
+     border: 8px solid #ffffff;
+     border-radius: 50%;
+     box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+     cursor: pointer;
+    
+     transform: scale(1.1);
 }
 
 .range-toggle-min {
