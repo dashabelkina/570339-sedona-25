@@ -15,10 +15,10 @@
               <img src="img/index-logo.svg" width="140" height="71" alt="Логотип Седона">
             </a>
             <ul class="site-navigation">
-              <li><a href="info.html">Информация</a></li>
-              <li><a href="gallery.html">Фото и видео</a></li>
-              <li><a href="map.html">Карта штата</a></li>
-              <li><a href="inner.html">Гостиницы</a></li>
+              <li class="left-side-navigation"><a href="info.html">Информация</a></li>
+              <li class="left-side-navigation"><a href="gallery.html">Фото и видео</a></li>
+              <li class="right-side-navigation"><a href="map.html">Карта штата</a></li>
+              <li class="right-side-navigation"><a href="inner.html">Гостиницы</a></li>
             </ul>
         </nav>
     </header>
@@ -76,12 +76,12 @@
                 <div class="features-item">
                     <h3 class="features-item-title">Красивая дорога</h3>
                     <span class="features-item-number">— №4 —</span>
-                    <p class="features-item-desc">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                    <p class="features-item-desc">Ехать в Седону из Лас-Вегаса&nbsp;совсем не скучно!</p>
                 </div>
                 <div class="features-item">
                     <h3 class="features-item-title">Мало туристов</h3>
                     <span class="features-item-number">— №5 —</span>
-                    <p class="features-item-desc">Большинство едет в гранд каньон и толпится там</p>
+                    <p class="features-item-desc">Большинство едет в гранд каньон и&nbsp;толпится там</p>
                 </div>
             </div>
         </section>
@@ -113,31 +113,35 @@
                         <div class="person-count">
                             <div class="adult">
                                 <label for="adult">Взрослые:</label>
-                                <button class="minus-icon-adult" type="button">
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12px" height="3px">
-                                        <image  x="0px" y="0px" width="12px" height="3px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAADCAQAAAANKia5AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfjBRMVDyKeXYg9AAAAG0lEQVQI12NcGcqwigEThDExKDFgA0pMDDgAAJRfAkg0BAZUAAAAAElFTkSuQmCC" />
-                                    </svg>
-                                </button>
-                                <input type="text" id="adult" name="adult" value="" placeholder="2">
-                                <button class="plus-icon-adult" type="button">
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11px" height="11px">
-                                        <image  x="0px" y="0px" width="11px" height="11px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALCAQAAAADpb+tAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfjBRMVFyGFT0HeAAAASElEQVQI12NggIKVZ1b+X3kGxmOCMRiMoRhNGAXgEGZceQahFQ7OMq78j92Q91hE3zPCHfifgYGBIZyRHJcghN9DMQMDAwMDAIC4DuMojQSIAAAAAElFTkSuQmCC" />
-                                    </svg>
-                                </button>
+                                <div class="adult-item">
+                                    <button class="minus-icon-adult" type="button">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11px" height="11px" viewBox="0 0 32 32">
+                                            <path d="M0 13v6c0 0.552 0.448 1 1 1h30c0.552 0 1-0.448 1-1v-6c0-0.552-0.448-1-1-1h-30c-0.552 0-1 0.448-1 1z"></path>
+                                        </svg>
+                                    </button>
+                                    <input type="text" id="adult" name="adult" value="" placeholder="2">
+                                       <button class="plus-icon-adult" type="button">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="11" viewBox="0 0 32 32">
+                                            <path d="M31 12h-11v-11c0-0.552-0.448-1-1-1h-6c-0.552 0-1 0.448-1 1v11h-11c-0.552 0-1 0.448-1 1v6c0 0.552 0.448 1 1 1h11v11c0 0.552 0.448 1 1 1h6c0.552 0 1-0.448 1-1v-11h11c0.552 0 1-0.448 1-1v-6c0-0.552-0.448-1-1-1z"></path>
+                                        </svg>
+                                    </button>
+                                </div>
                             </div>
                             <div class="child">
                                 <label for="child">Дети:</label>
-                                <button class="minus-icon-child" type="button">
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12px" height="3px">
-                                        <image  x="0px" y="0px" width="12px" height="3px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAADCAQAAAANKia5AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfjBRMVDyKeXYg9AAAAG0lEQVQI12NcGcqwigEThDExKDFgA0pMDDgAAJRfAkg0BAZUAAAAAElFTkSuQmCC" />
-                                    </svg>
-                                </button>
-                                <input type="text" id="child" name="child" value="" placeholder="0">
-                                <button class="plus-icon-child" type="button">
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11px" height="11px">
-                                        <image  x="0px" y="0px" width="11px" height="11px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALCAQAAAADpb+tAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfjBRMVFyGFT0HeAAAASElEQVQI12NggIKVZ1b+X3kGxmOCMRiMoRhNGAXgEGZceQahFQ7OMq78j92Q91hE3zPCHfifgYGBIZyRHJcghN9DMQMDAwMDAIC4DuMojQSIAAAAAElFTkSuQmCC" />
-                                    </svg>
-                                </button>
+                                <div class="child-item">
+                                    <button class="minus-icon-child" type="button">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11px" height="11px" viewBox="0 0 32 32">
+                                            <path d="M0 13v6c0 0.552 0.448 1 1 1h30c0.552 0 1-0.448 1-1v-6c0-0.552-0.448-1-1-1h-30c-0.552 0-1 0.448-1 1z"></path>
+                                        </svg>
+                                    </button>
+                                    <input type="text" id="child" name="child" value="" placeholder="0">
+                                    <button class="plus-icon-child" type="button">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="11" viewBox="0 0 32 32">
+                                            <path d="M31 12h-11v-11c0-0.552-0.448-1-1-1h-6c-0.552 0-1 0.448-1 1v11h-11c-0.552 0-1 0.448-1 1v6c0 0.552 0.448 1 1 1h11v11c0 0.552 0.448 1 1 1h6c0.552 0 1-0.448 1-1v-11h11c0.552 0 1-0.448 1-1v-6c0-0.552-0.448-1-1-1z"></path>
+                                        </svg>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                         <button class="button-search-hotel" type="submit">Найти</button>    
