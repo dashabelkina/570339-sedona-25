@@ -5,5 +5,5 @@ var date = form.querySelector("[name=date-checkin]");
 link.addEventListener("click", function (evt) {
 evt.preventDefault();
 form.classList.toggle("form-close");
-});
 date.focus();
+});
