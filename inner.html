@@ -32,25 +32,16 @@
                                 <legend class="form-filter-legend">Инфраструктура:</legend>
                                 <ul class="check-list">
                                     <li class="check-list-item">
-                                        <label class="checkbox-label" for="pool">
-                                            <input class="checkbox-input" type="checkbox" id="pool" name="pool" checked>
-                                            <span class="checkbox-icon"></span>
-                                            Бассейн
-                                        </label>
+                                        <input class="checkbox-input visually-hidden" type="checkbox" id="pool-checkbox" name="pool" checked>
+                                        <label class="checkbox-label" for="pool-checkbox">Бассейн</label>
                                     </li>
                                     <li class="check-list-item">
-                                        <label class="checkbox-label" for="parking">
-                                            <input class="checkbox-input" type="checkbox" id="parking" name="parking">
-                                            <span class="checkbox-icon"></span>
-                                            Парковка
-                                        </label>    
+                                        <input class="checkbox-input visually-hidden" type="checkbox" id="parking-checkbox" name="parking">
+                                        <label class="checkbox-label" for="parking-checkbox">Парковка</label>    
                                     </li>
                                     <li class="check-list-item">
-                                        <label class="checkbox-label" for="wifi">
-                                            <input class="checkbox-input" type="checkbox" id="wifi" name="wifi">
-                                            <span class="checkbox-icon"></span>
-                                            Wi-Fi
-                                        </label>    
+                                        <input class="checkbox-input visually-hidden" type="checkbox" id="wifi-checkbox" name="wifi">
+                                        <label class="checkbox-label" for="wifi-checkbox">Wi-Fi</label>    
                                     </li>
                                 </ul>
                             </fieldset>
@@ -58,25 +49,16 @@
                                 <legend class="form-filter-legend">Тип жилья:</legend>
                                 <ul class="check-list">
                                     <li class="check-list-item">
-                                        <label class="checkbox-label" for="hotel">
-                                            <input class="checkbox-input" type="checkbox" id="hotel" name="hotel" checked>
-                                            <span class="checkbox-icon"></span>
-                                            Гостиница
-                                        </label>   
+                                        <input class="checkbox-input visually-hidden" type="checkbox" id="hotel-checkbox" name="hotel" checked>
+                                        <label class="checkbox-label" for="hotel-checkbox">Гостиница</label>   
                                     </li>
                                     <li class="check-list-item">
-                                        <label class="checkbox-label" for="motel">
-                                            <input class="checkbox-input" type="checkbox" id="motel" name="motel" checked>
-                                            <span class="checkbox-icon"></span>
-                                            Мотель
-                                        </label>
+                                        <input class="checkbox-input visually-hidden" type="checkbox" id="motel-checkbox" name="motel" checked>
+                                        <label class="checkbox-label" for="motel-checkbox">Мотель</label>
                                     </li>
                                     <li class="check-list-item">
-                                        <label class="checkbox-label" for="suite">
-                                            <input class="checkbox-input" type="checkbox" id="suite" name="suite" checked>
-                                            <span class="checkbox-icon"></span>
-                                            Апартаменты
-                                        </label>
+                                        <input class="checkbox-input visually-hidden" type="checkbox" id="suite-checkbox" name="suite" checked>
+                                        <label class="checkbox-label" for="suite-checkbox">Апартаменты</label>
                                     </li>
                                 </ul>
                             </fieldset>
@@ -209,19 +191,25 @@
                     <a class="visitsedona" href="#">#visitsedona</a>
                     <div class="footer-social">
                         <ul>
-                            <li><a class="social-button" href="#" title="Твитер">
+                            <li>
+                                <a class="social-button" href="#" title="Твитер">
                                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15">
-                                    <path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/></svg>
+                                        <path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/>
+                                    </svg>
                                 </a>
                             </li>
-                            <li><a class="social-button" href="#" title="Фейсбук">
+                            <li>
+                                <a class="social-button" href="#" title="Фейсбук">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
-                                    <path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/></svg>
+                                        <path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/>
+                                    </svg>
                                 </a>
                             </li>
-                            <li><a class="social-button" href="#" title="Ютьюб">
+                            <li>
+                                <a class="social-button" href="#" title="Ютьюб">
                                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16">
-                                    <path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/></svg>
+                                        <path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/>
+                                    </svg>
                                 </a>
                             </li>
                         </ul>

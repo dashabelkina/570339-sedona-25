@@ -199,6 +199,10 @@ input[type="radio"].visually-hidden {
     padding: 0;
 }
 
+.features-img {
+    max-height: 260px;
+}
+
 .features-first {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -737,69 +741,64 @@ input[type="radio"].visually-hidden {
 }
 
 .checkbox-label {
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     padding-bottom: 25px;
-    padding-left: 7px;
+    padding-left: 41px;
     cursor: pointer;
 }
 
 .checkbox-input {
-    position: relative;
-    margin-right: 0px;
-    cursor: pointer;
-    visibility: hidden;
-}
-
-.checkbox-icon {
-    position: relative;
-    margin-right: 21px;
+    position: absolute;
+    top: 5px;
+    left: 7px;
     cursor: pointer;
 }
 
-.checkbox-icon::before {
+.checkbox-label::before {
     display: block;  
     content: "";
     position: absolute;
-    top: -2px;
-    right: -9px;
+    top: 0px;
+    left: 1px;
     width: 27px;
     height: 23px;
     background: url("../img/checkbox-off.svg") no-repeat top left;
     background-size: 23px 23px;
 }
 
-.checkbox-input:checked + .checkbox-icon::before {
+.checkbox-input:checked + .checkbox-label::before {
     display: block; 
     content: "";
     position: absolute;
-    top: -2px;
-    right: -9px;
+    top: 0px;
+    left: 1px;
     width: 27px;
     height: 23px;
     background: url("../img/checkbox-on.svg") no-repeat top left;
     background-size: 27px 23px;
 }
 
-.checkbox-input:disabled + .checkbox-icon::before {
+.checkbox-input:disabled + .checkbox-label::before {
     display: block; 
     content: "";
     position: absolute;
-    top: -2px;
-    right: -9px;
+    top: 0px;
+    left: 1px;
     width: 27px;
     height: 23px;
     background: url("../img/checkbox-off-disabled.svg") no-repeat top left;
     background-size: 23px 23px;
 }
 
-.checkbox-input:checked:disabled + .checkbox-icon::before {
+.checkbox-input:checked:disabled + .checkbox-label::before {
     display: block;
     content: "";
     position: absolute;
-    top: -2px;
-    right: -9px;
+    top: 0px;
+    left: 1px;
     width: 27px;
     height: 23px;
     background: url("../img/checkbox-on-disabled.svg") no-repeat top left;
@@ -1096,6 +1095,7 @@ input[type="radio"].visually-hidden {
     padding-left: 29px;
 }
 .hotels-item-wrapper h3 {
+    max-width: 500px;
     margin-bottom: 0;
 }
 
@@ -1158,7 +1158,7 @@ input[type="radio"].visually-hidden {
 }
 
 .rating-text {
-    padding: 4px 14px;
+    padding: 4px 12px;
     color: #666666;
     background-color: #f2f2f2;
 }
@@ -1223,6 +1223,26 @@ input[type="radio"].visually-hidden {
     margin-left: 33px;
 }
 
-.form-close {
-    display: none;
+.formclose {
+    visibility: hidden;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+            transform: translateY(-100%);
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.formopen {
+    visibility: visible;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
