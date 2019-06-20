@@ -754,10 +754,7 @@ input[type="radio"].visually-hidden {
 .checkbox-input {
     position: absolute;
     cursor: pointer;
-    -webkit-appearance: none;
-        -moz-appearance: none;
-            -ms-appearance: none;
-                appearance: none;
+    opacity: 0;
 }
 
 .checkbox-label::before {
