@@ -1036,7 +1036,8 @@ input[type="radio"].visually-hidden {
 }
 
 .result-search-all {
-    margin-right: 7px;
+    min-width: 120px;
+    margin-right: 5px;
 }
 
 .sorting-button-list {
